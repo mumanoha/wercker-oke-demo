@@ -21,7 +21,8 @@ spec:
     spec:
       containers:
       - name: get-ip-server
-        image: ${DOCKER_REPO}:${WERCKER_GIT_COMMIT}
+        # image: ${DOCKER_REPO}:${WERCKER_GIT_COMMIT}
+        image: yyz.ocir.io/orasenatdoracledigital01/demorepo:latest
         ports:
         - name: get-ip-server
           containerPort: 8080
